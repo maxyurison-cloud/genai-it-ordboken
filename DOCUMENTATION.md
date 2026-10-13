@@ -167,6 +167,8 @@ Before pushing to GitHub I checked `git status` to make sure that `terraform.tfs
 
 A working GenAI web application that runs in AWS and is reachable on a public IP address. The infrastructure is fully automated with Terraform: one command creates the whole environment, one command (`terraform destroy`) removes it. The code is published on GitHub without any secrets.
 
+After testing, I destroyed all AWS resources with `terraform destroy` and deleted the API key, to avoid unnecessary costs and to keep the key safe. The whole environment can be recreated at any time with `terraform apply`.
+
 ### What I learned
 
 - How a web application calls a generative AI model through an API, and how this differs from using an AI chat.
