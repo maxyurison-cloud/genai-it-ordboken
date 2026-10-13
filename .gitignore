@@ -1,0 +1,15 @@
+# Hemligheter - ska ALDRIG till GitHub
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
